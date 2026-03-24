@@ -1,5 +1,31 @@
-/venv
-*.csv
-data/
-models
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
 
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Data and Models
+# Exclude raw data and large CSVs to keep repo light
+data/raw/
+*.csv
+
+# Exclude trained models
+models/*.pkl
+models/*.h5
+models/*.joblib
+
+# OS generated files
+.DS_Store
+Thumbs.db
